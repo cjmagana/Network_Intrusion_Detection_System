@@ -83,7 +83,7 @@ To ensure robust performance estimation, the model was validated using 5-fold st
 ## 🛡 Attack Type Analysis
 
 ### High-Confidence Detection (~0.90–0.99)
-| Attack Type | Category | Mean Confidence | Portfolio Impact |
+| Attack Type | Category | Mean Confidence | Impact |
 |-------------|----------|-----------------|------------------|
 | **portsweep** | Port Scanning | 0.998 ± 0.018 | Auto-Block Candidate |
 | **back** | Backdoor/Trojan | 0.998 ± 0.015 | Secondary Validation |
@@ -97,7 +97,7 @@ To ensure robust performance estimation, the model was validated using 5-fold st
 ### Medium-Low Confidence Detection (~0.65–0.85)
 These attack types often show lower confidence due to sparse training data or protocol variance.
 
-| Attack Type | Category | Portfolio Confidence Score | Recommendation |
+| Attack Type | Category | Confidence Score | Recommendation |
 |-------------|----------|---------------------------|----------------|
 | **buffer_overflow** | Exploitation | 0.710 ± 0.043 | Manual Review Required |
 | **xterm** | Shell Execution | 0.761 ± 0.121 | Secondary Validation |
